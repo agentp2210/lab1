@@ -1,7 +1,7 @@
 {
         "containerDefinitions": [
             {
-                "name": "nginx-container-2",
+                "name": "nginx-container",
                 "image": "nginx:latest",
                 "cpu": 256,
                 "memoryReservation": 512,
