@@ -1,6 +1,4 @@
 {
-    "taskDefinition": {
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:136938335929:task-definition/nginx-definition:1",
         "containerDefinitions": [
             {
                 "name": "nginx-container",
@@ -69,5 +67,4 @@
         "memory": "512",
         "registeredAt": "2022-01-02T05:47:06.626000+00:00",
         "registeredBy": "arn:aws:iam::136938335929:user/cloud_user"
-    }
 }
