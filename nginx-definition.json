@@ -3,8 +3,8 @@
             {
                 "name": "nginx-container",
                 "image": "nginx:latest",
-                "cpu": 256,
-                "memoryReservation": 512,
+                "cpu": 1024,
+                "memoryReservation": 2048,
                 "links": [],
                 "portMappings": [
                     {
@@ -13,12 +13,7 @@
                         "protocol": "tcp"
                     }
                 ],
-                "essential": true,
-                "entryPoint": [],
-                "command": [],
-                "environment": [],
-                "mountPoints": [],
-                "volumesFrom": [],
+                "essential": true,                
                 "logConfiguration": {
                     "logDriver": "awslogs",
                     "options": {
@@ -30,37 +25,11 @@
             }
         ],
         "family": "nginx-definition",
-        "executionRoleArn": "arn:aws:iam::081580121689:role/ecsTaskExecutionRole",
         "networkMode": "awsvpc",
-        "revision": 1,
-        "volumes": [],
         "status": "ACTIVE",
-        "requiresAttributes": [
-            {
-                "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-            },
-            {
-                "name": "ecs.capability.execution-role-awslogs"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-            },
-            {
-                "name": "ecs.capability.task-eni"
-            }
-        ],
-        "placementConstraints": [],
         "requiresCompatibilities": [
             "FARGATE"
         ],
-        "cpu": "256",
-        "memory": "512",
-        "registeredAt": "2022-01-02T05:47:06.626000+00:00",
-        "registeredBy": "arn:aws:iam::136938335929:user/cloud_user"
+        "cpu": "1024",
+        "memory": "2048",
 }
