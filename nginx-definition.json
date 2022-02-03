@@ -25,7 +25,7 @@
             }
         ],
         "family": "nginx-definition",
-        "executionRoleArn": "arn:aws:iam::245148573854:role/ecsTaskExecutionRole",
+        "executionRoleArn": "arn:aws:iam::353362198748:role/ecsTaskExecutionRole",
         "networkMode": "awsvpc",
         "requiresCompatibilities": [
             "FARGATE"
